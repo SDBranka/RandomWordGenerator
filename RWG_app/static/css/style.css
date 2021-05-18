@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+#wrapper {
+    width: 900px;
+    margin: 150px auto;
+    padding: 25px 10px;
+    background-color: cornflowerblue;
+}
+
+#main {
+    text-align: center;
+}
+
+p {
+    padding: 7px;
+    font-size: 27px;
+}
+
+#wordDisplay {
+    border: 3px solid rgb(30, 30, 163);
+    margin: 5px 280px;
+    font-size: 36px;
+    background-color: white;
+}
+
+button {
+    border-radius: 9px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#resetbtn {
+    margin-left: 840px;
+}

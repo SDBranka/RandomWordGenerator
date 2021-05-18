@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Random Word Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'js/index.js' %}" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                <p>Random Word (attempt #{{ count }})</p>
+                <p id="wordDisplay">{{ rand_word }}</p>
+                <button id="genBtn"><a href="/">Generate</a></button>
+            </div>
+            <div>
+                <button id="resetbtn"><a href="/reset">Reset</a></button>
+            </div>
+        </div> <!--end wrapper-->
+    </body>
+</html>
